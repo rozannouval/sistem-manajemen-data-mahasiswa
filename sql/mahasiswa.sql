@@ -30,6 +30,7 @@ CREATE TABLE `mahasiswa` (
   `id` int NOT NULL,
   `nim` varchar(15) NOT NULL,
   `nama` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `jurusan` varchar(50) NOT NULL,
   `alamat` text,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP

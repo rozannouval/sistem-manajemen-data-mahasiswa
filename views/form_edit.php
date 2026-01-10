@@ -1,5 +1,5 @@
 <?php
-include "koneksi.php";
+include "../php_logic/koneksi.php";
 
 $data = mysqli_fetch_array(mysqli_query(
     $koneksi, "SELECT * FROM mahasiswa WHERE id='$_GET[id]'"
@@ -17,7 +17,7 @@ if (isset($_POST['update'])) {
     echo "<script>alert('Data berhasil diupdate');location='data.php';</script>";
 }
 
-include "header.php";
+include "includes/header.php";
 ?>
 
 <h3>SMDM</h3>
@@ -32,4 +32,4 @@ include "header.php";
     <button type="submit" name="update">Update</button>
 </form>
 
-<?php include "footer.php"; ?>
+<?php include "includes/footer.php"; ?>
