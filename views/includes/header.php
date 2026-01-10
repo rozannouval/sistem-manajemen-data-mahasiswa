@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Sistem Manajemen Data Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
 </head>
 <body>
     <header>
         <div class="container">
             <a href="#" class="logo">MyWebsite</a>
-            
+
             <nav>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>

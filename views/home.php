@@ -24,7 +24,7 @@ include "includes/header.php";
                 </div>
             </div>
         </div>
-        
+
         <div class="col-md-4">
             <div class="card bg-light mb-3">
                 <div class="card-header">Status Server</div>
