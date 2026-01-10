@@ -6,7 +6,7 @@ include "includes/header.php";
     <div class="container" style="margin-top: 50px;">
     <div class="jumbotron">
         <h1 class="display-4">Selamat Datang!</h1>
-        <p class="lead">Di Sistem Manajemen Data Mahasiswa (SMDM).</p>
+        <p class="lead">Di Sistem Manajemen Data Mahasiswa.</p>
         <hr class="my-4">
         <p>Anda login sebagai administrator. Anda dapat mengelola data mahasiswa mulai dari melihat, menambah, mengedit, hingga menghapus data.</p>
         

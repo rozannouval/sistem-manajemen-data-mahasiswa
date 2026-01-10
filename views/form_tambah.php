@@ -1,5 +1,5 @@
 <?php
-include "koneksi.php";
+include "../php_logic/koneksi.php";
 
 if (isset($_POST['simpan'])) {
     mysqli_query($koneksi, "INSERT INTO mahasiswa VALUES (
@@ -14,7 +14,7 @@ if (isset($_POST['simpan'])) {
     echo "<script>alert('Data berhasil disimpan');location='data.php';</script>";
 }
 
-include "header.php";
+include "includes/header.php";
 ?>
 
 <h3>SMDM</h3>
@@ -29,4 +29,4 @@ include "header.php";
     <button type="submit" name="simpan">Simpan</button>
 </form>
 
-<?php include "footer.php"; ?>
+<?php include "includes/footer.php"; ?>
