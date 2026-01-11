@@ -1,71 +1,42 @@
 <?php
+// 1. Definisikan CSS khusus halaman ini
+$pageCss = 'home.css';
+
+// 2. Include Koneksi (Mundur satu folder ke php_logic)
 include '../php_logic/koneksi.php';
 
-$css_khusus = 'home.css';
+// 3. Logic: Hitung jumlah mahasiswa
+$query_count = mysqli_query($koneksi, "SELECT COUNT(*) as total FROM mahasiswa");
+$data_count = mysqli_fetch_assoc($query_count);
+$total_mhs = $data_count['total'];
 
+// 4. Include Header
 include 'includes/header.php';
-
-$query = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
-$jumlah_mahasiswa = mysqli_num_rows($query);
 ?>
 
-    <div class="container">
-        
-        <div class="jumbotron">
-            <h1>Selamat Datang!</h1>
-            <h3>Di Sistem Manajemen Data Mahasiswa.</h3>
-            <hr>
-            <p>Anda login sebagai administrator. Silakan kelola data mahasiswa di bawah ini dengan mudah dan cepat.</p>
-            <br>
-            <a class="btn btn-primary" href="data.php">Lihat Data Mahasiswa</a>
-            <a class="btn btn-success" href="form_tambah.php">Tambah Data Baru</a>
+<div class="home-wrapper">
+    <h1>Selamat Datang di Sistem Manajemen Data Mahasiswa</h1>
+    <p class="subtitle">Kelola data akademik dengan mudah dan cepat.</p>
+
+    <div class="cards-container">
+        <div class="card bg-blue">
+            <h3>Total Mahasiswa</h3>
+            <div class="number"><?php echo $total_mhs; ?></div>
+            <p>Mahasiswa terdaftar</p>
         </div>
 
-        <div class="row">
-            
-            <div class="col-md-4">
-                <div class="card card-blue">
-                    <div class="card-header">
-                        Total Mahasiswa
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title big-number">
-                            <?php echo $jumlah_mahasiswa; ?>
-                        </h2>
-                        <p class="card-text">Mahasiswa terdaftar.</p>
-                    </div>
-                </div>
-            </div>
-<<<<<<< HEAD
-            
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">Status Server</div>
-                    <div class="card-body">
-                        <h5 class="card-title text-online">
-                            ● Online
-                        </h5>
-                        <p class="card-text">
-                            <?php echo date('d F Y'); ?>
-                        </p>
-                    </div>
-=======
+        <div class="card bg-green">
+            <h3>Input Data Baru</h3>
+            <p>Tambahkan data mahasiswa baru ke sistem.</p>
+            <a href="form_tambah.php" class="btn-card">Tambah Data</a>
         </div>
 
-        <div class="col-md-4">
-            <div class="card bg-light mb-3">
-                <div class="card-header">Status Server</div>
-                <div class="card-body">
-                    <h5 class="card-title" style="color: green;">● Online</h5>
-                    <p class="card-text"><?php echo date('d F Y'); ?></p>
->>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
-                </div>
-            </div>
-
+        <div class="card bg-orange">
+            <h3>Status Sistem</h3>
+            <p>Sistem berjalan dengan baik.</p>
+            <span class="status-active">Aktif</span>
         </div>
     </div>
+</div>
 
-<?php
-// 4. Panggil Potongan Footer
-include 'includes/footer.php';
-?>
+<?php include 'includes/footer.php'; ?>

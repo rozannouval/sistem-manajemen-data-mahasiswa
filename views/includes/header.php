@@ -1,50 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Sistem Data Mahasiswa</title>
+    <title>SMDM - Sistem Manajemen Data Mahasiswa</title>
     
-    <link rel="stylesheet" type="text/css" href="../css/headfoot.css">
-
-    <?php if (isset($css_khusus)) { ?>
-        <link rel="stylesheet" type="text/css" href="../css/<?php echo $css_khusus; ?>">
+    <link rel="stylesheet" href="../css/headfoot.css">
+    
+    <?php if(isset($pageCss)) { ?>
+        <link rel="stylesheet" href="../css/<?php echo $pageCss; ?>">
     <?php } ?>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-wrapper">
-            <a href="home.php" class="logo">Sistem Admin</a>
-            
-            <?php 
-            $halaman_sekarang = basename($_SERVER['PHP_SELF']);
-            
-            if ($halaman_sekarang == 'home.php') { 
-            ?>
-                <a href="../login.php" class="btn-back" style="color:red; border-color:red;">Logout</a>
-            <?php } else { ?>
-                <a href="home.php" class="btn-back">← Kembali ke Dashboard</a>
-            <?php } ?>
-=======
-    <title>Sistem Manajemen Data Mahasiswa</title>
-    <link rel="stylesheet" type="text/css" href="../css/home.css">
-    <link rel="stylesheet" type="text/css" href="../css/layout.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="#" class="logo">MyWebsite</a>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
->>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
-        </div>
+    <nav>
+        <div class="logo">SMDM</div>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="data.php">Data Mahasiswa</a></li>
+            <li><a href="form_tambah.php">Tambah Data</a></li>
+            <li><a href="login.php">Logout</a></li>
+        </ul>
     </nav>
+    
+    <div class="content-container">

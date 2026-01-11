@@ -1,5 +1,5 @@
-<footer>
-        <p>&copy; 2026 Sistem Mahasiswa. All Rights Reserved.</p>
+</div> <footer>
+        <p>&copy; <?php echo date('Y'); ?> Kelompok Pemrograman Web. All Rights Reserved.</p>
     </footer>
 
 </body>

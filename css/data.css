@@ -1,132 +1,67 @@
-.main-content {
-  flex: 1; 
-  padding-bottom: 50px;
+.data-wrapper {
+  padding: 40px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.header-section {
-  margin-bottom: 25px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-}
-
-.header-section h1 {
-  color: #2c3e50;
-  font-size: 2rem;
-}
-.header-section p {
-  color: #7f8c8d;
-  margin-top: 5px;
-}
-
-.action-bar {
+.header-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  color: white;
-  font-weight: 600;
-  transition: transform 0.2s;
-  font-size: 0.95rem;
-}
-
 .btn-tambah {
-  background-color: #2ecc71;
-  box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
-}
-.btn-tambah:hover {
-  background-color: #27ae60;
-  transform: translateY(-2px);
-}
-
-.card-tabel {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  overflow-x: auto; 
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-.card-tabel {
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  overflow-x: auto;
-}
-
-/* Tabel Dasar */
-.table {
+/* Table Styling */
+.table-mhs {
   width: 100%;
-  border-collapse: separate; 
-  border-spacing: 0;
-  margin-top: 10px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.table th,
-.table td {
-  padding: 18px 15px; 
+.table-mhs th,
+.table-mhs td {
+  padding: 15px;
   text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.table thead tr th {
-  background: linear-gradient(135deg, #3498db, #89c4f4);
+.table-mhs th {
+  background-color: #2c3e50;
   color: white;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-  border: none;
 }
 
-.table thead tr th:first-child {
-  border-top-left-radius: 12px;
+.table-mhs tr:hover {
+  background-color: #f1f1f1;
 }
 
-.table thead tr th:last-child {
-  border-top-right-radius: 12px;
-}
-
-.table tbody tr td {
-  border-bottom: 1px solid #f0f0f0; 
-  color: #555;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.table tbody tr:hover td {
-  background-color: #f8fbff;
-  color: #3498db;
-}
-
-.btn-aksi {
-  display: inline-block;
-  padding: 6px 12px; 
-  border-radius: 5px; 
-  font-size: 0.75rem;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Tombol Aksi */
+.btn-edit,
+.btn-hapus {
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
   margin-right: 5px;
-  margin-bottom: 2px;
-}
-
-.btn-aksi:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn-edit {
-  background: linear-gradient(to right, #f39c12, #fabe58);
+  background-color: #f1c40f;
+  color: #333;
 }
 
 .btn-hapus {
-  background: linear-gradient(to right, #e74c3c, #ef8175);
+  background-color: #e74c3c;
+  color: white;
 }
