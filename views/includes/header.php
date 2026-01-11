@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Sistem Data Mahasiswa</title>
     
     <link rel="stylesheet" type="text/css" href="../css/headfoot.css">
@@ -26,5 +27,24 @@
             <?php } else { ?>
                 <a href="home.php" class="btn-back">← Kembali ke Dashboard</a>
             <?php } ?>
+=======
+    <title>Sistem Manajemen Data Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">MyWebsite</a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
         </div>
     </nav>

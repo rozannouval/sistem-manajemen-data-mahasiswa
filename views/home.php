@@ -36,6 +36,7 @@ $jumlah_mahasiswa = mysqli_num_rows($query);
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             
             <div class="col-md-4">
                 <div class="card">
@@ -48,6 +49,16 @@ $jumlah_mahasiswa = mysqli_num_rows($query);
                             <?php echo date('d F Y'); ?>
                         </p>
                     </div>
+=======
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-light mb-3">
+                <div class="card-header">Status Server</div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: green;">● Online</h5>
+                    <p class="card-text"><?php echo date('d F Y'); ?></p>
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
                 </div>
             </div>
 

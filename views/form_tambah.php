@@ -1,19 +1,5 @@
 <?php
-include "../php_logic/koneksi.php";
-
-if (isset($_POST['simpan'])) {
-    mysqli_query($koneksi, "INSERT INTO mahasiswa VALUES (
-        '',
-        '$_POST[nama]',
-        '$_POST[nim]',
-        '$_POST[jurusan]',
-        '$_POST[email]',
-        '$_POST[alamat]'
-    )");
-
-    echo "<script>alert('Data berhasil disimpan');location='data.php';</script>";
-}
-
+include "../php_logic/create.php";
 include "includes/header.php";
 ?>
 

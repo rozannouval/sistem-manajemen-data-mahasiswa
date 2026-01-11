@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .jumbotron {
   background-color: #ffffff;
   padding: 50px 30px;
@@ -5,10 +6,40 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   text-align: center;
   margin-bottom: 40px;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 30px;
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
 }
 
 .jumbotron h1 {
   color: #2c3e50;
+<<<<<<< HEAD
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
@@ -32,22 +63,68 @@
   color: #666;
   max-width: 700px;
   margin: 0 auto 30px auto;
+=======
+  margin-bottom: 10px;
+}
+
+.jumbotron hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-success {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #27ae60;
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
   gap: 25px;
+=======
+  gap: 20px;
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
   justify-content: center;
 }
 
 .col-md-4 {
   flex: 1;
+<<<<<<< HEAD
   min-width: 300px;
+=======
+  min-width: 250px;
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
 }
 
 .card {
   background-color: white;
+<<<<<<< HEAD
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -74,10 +151,32 @@
 
 .card-blue .card-header {
   background-color: #3498db;
+=======
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #ecf0f1;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-info .card-header {
+  background-color: #17a2b8;
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
   color: white;
   border: none;
 }
 
+<<<<<<< HEAD
 .big-number {
   color: #3498db;
   font-size: 3.5rem;
@@ -117,4 +216,14 @@
 .btn-success:hover {
   background-color: #27ae60;
   transform: translateY(-2px);
+=======
+.bg-info .card-body {
+  background-color: #1badce;
+  color: white;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+>>>>>>> 787d6185577f148a17ef6d9a56868b88cfa8e486
 }
