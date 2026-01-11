@@ -2,7 +2,7 @@
 include "../php_logic/update.php";
 include "includes/header.php";
 ?>
-
+<link rel="stylesheet" href="../css/edit.css">
 <h3>SMDM</h3>
 
 <form method="post">
