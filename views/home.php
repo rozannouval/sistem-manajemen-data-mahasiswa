@@ -1,16 +1,12 @@
 <?php
-// 1. Definisikan CSS khusus halaman ini
 $pageCss = 'home.css';
 
-// 2. Include Koneksi (Mundur satu folder ke php_logic)
 include '../php_logic/koneksi.php';
 
-// 3. Logic: Hitung jumlah mahasiswa
 $query_count = mysqli_query($koneksi, "SELECT COUNT(*) as total FROM mahasiswa");
 $data_count = mysqli_fetch_assoc($query_count);
 $total_mhs = $data_count['total'];
 
-// 4. Include Header
 include 'includes/header.php';
 ?>
 

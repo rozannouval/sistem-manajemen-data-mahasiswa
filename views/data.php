@@ -26,7 +26,6 @@ include 'includes/header.php';
             $no = 1;
             $query = mysqli_query($koneksi, "SELECT * FROM mahasiswa ORDER BY nim ASC");
             
-            // Loop data
             while($row = mysqli_fetch_assoc($query)) {
             ?>
             <tr>
