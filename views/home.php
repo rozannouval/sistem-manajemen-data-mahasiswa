@@ -1,44 +1,38 @@
 <?php
-include "includes/header.php";
+$pageCss = 'home.css';
+
+include '../php_logic/koneksi.php';
+
+$query_count = mysqli_query($koneksi, "SELECT COUNT(*) as total FROM mahasiswa");
+$data_count = mysqli_fetch_assoc($query_count);
+$total_mhs = $data_count['total'];
+
+include 'includes/header.php';
 ?>
 
-<main>
-    <div class="container" style="margin-top: 50px;">
-    <div class="jumbotron">
-        <h1 class="display-4">Selamat Datang!</h1>
-        <p class="lead">Di Sistem Manajemen Data Mahasiswa.</p>
-        <hr class="my-4">
-        <p>Anda login sebagai administrator. Anda dapat mengelola data mahasiswa mulai dari melihat, menambah, mengedit, hingga menghapus data.</p>
-        
-        <a class="btn btn-primary btn-lg" href="data.php" role="button">Lihat Data Mahasiswa</a>
-        <a class="btn btn-success btn-lg" href="form_tambah.php" role="button">Tambah Data Baru</a>
-    </div>
+<div class="home-wrapper">
+    <h1>Selamat Datang di Sistem Manajemen Data Mahasiswa</h1>
+    <p class="subtitle">Kelola data akademik dengan mudah dan cepat.</p>
 
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="card text-white bg-info mb-3">
-                <div class="card-header">Total Mahasiswa</div>
-                <div class="card-body">
-                    <h2 class="card-title"><?php echo $jumlah_mahasiswa; ?> Orang</h2>
-                    <p class="card-text">Data tercatat di sistem.</p>
-                </div>
-            </div>
+    <div class="cards-container">
+        <div class="card bg-blue">
+            <h3>Total Mahasiswa</h3>
+            <div class="number"><?php echo $total_mhs; ?></div>
+            <p>Mahasiswa terdaftar</p>
         </div>
 
-        <div class="col-md-4">
-            <div class="card bg-light mb-3">
-                <div class="card-header">Status Server</div>
-                <div class="card-body">
-                    <h5 class="card-title" style="color: green;">● Online</h5>
-                    <p class="card-text"><?php echo date('d F Y'); ?></p>
-                </div>
-            </div>
+        <div class="card bg-green">
+            <h3>Input Data Baru</h3>
+            <p>Tambahkan data mahasiswa baru ke sistem.</p>
+            <a href="form_tambah.php" class="btn-card">Tambah Data</a>
+        </div>
+
+        <div class="card bg-orange">
+            <h3>Status Sistem</h3>
+            <p>Sistem berjalan dengan baik.</p>
+            <span class="status-active">Aktif</span>
         </div>
     </div>
 </div>
-</main>
 
-<?php
-include "includes/footer.php";
-
-?>
+<?php include 'includes/footer.php'; ?>
