@@ -1,0 +1,88 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+}
+
+/* JUDUL */
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: #890ddb;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* FORM CARD */
+form {
+    width: 480px;
+    background: #ececef;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* LABEL (TEXT BIASA) */
+form br:first-child {
+    display: none;
+}
+
+/* INPUT & TEXTAREA */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 6px;
+    border: 1px solid #116c07;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: none;
+    min-height: 90px;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6c63ff, #48c6ef);
+    border: none;
+    border-radius: 12px;
+    color: #ca0dbd;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: linear-gradient(135deg, #efd048, #6c63ff);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

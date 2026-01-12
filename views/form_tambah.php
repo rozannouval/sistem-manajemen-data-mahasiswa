@@ -2,6 +2,7 @@
 include "../php_logic/create.php";
 include "includes/header.php";
 ?>
+<link rel="stylesheet" href="../css/tambah.css">
 
 <h3>SMDM</h3>
 
