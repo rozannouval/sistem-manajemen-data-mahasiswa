@@ -1,6 +1,7 @@
-</div> <footer>
-        <p>&copy; <?php echo date('Y'); ?> Kelompok Pemrograman Web. All Rights Reserved.</p>
-    </footer>
+<footer>
+    copyright by kelompok 1
+</footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

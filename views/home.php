@@ -10,9 +10,9 @@ $total_mhs = $data_count['total'];
 include 'includes/header.php';
 ?>
 
-<div class="home-wrapper">
+<div class="home-wrapper" style="min-height: 85vh;">
     <h1>Selamat Datang di Sistem Manajemen Data Mahasiswa</h1>
-    <p class="subtitle">Kelola data akademik dengan mudah dan cepat.</p>
+    <p class="subtitle">Kelola data akademik dengan mudah dan cepat......</p>
 
     <div class="cards-container">
         <div class="card bg-blue">

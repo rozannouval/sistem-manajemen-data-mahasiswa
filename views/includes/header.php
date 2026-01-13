@@ -12,7 +12,6 @@
     <?php } ?>
 </head>
 <body>
-
     <nav>
         <div class="logo">SMDM</div>
         <ul>
