@@ -46,23 +46,23 @@
 .bg-blue { border-top: 5px solid #3498db; }
 .bg-blue .number { color: #3498db; }
 
-.bg-green { border-top: 5px solid #2ecc71; }
+.bg-green { border-top: 5px solid #f7f9f8; }
 .btn-card {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #2ecc71;
+    background-color: #6559ef;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.bg-orange { border-top: 5px solid #e67e22; }
+.bg-orange { border-top: 5px solid #7e91f0; }
 .status-active {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 15px;
-    background-color: #e67e22;
+    background-color: #3437da;
     color: white;
     border-radius: 15px;
     font-size: 12px;
