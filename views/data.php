@@ -14,8 +14,8 @@ include 'includes/header.php';
         <thead>
             <tr>
                 <th>No</th>
-                <th>NIM</th>
                 <th>Nama Lengkap</th>
+                <th>NIM</th>
                 <th>Jurusan</th>
                 <th>Email</th>
                 <th>Aksi</th>
