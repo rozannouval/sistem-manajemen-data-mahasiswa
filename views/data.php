@@ -1,6 +1,6 @@
 <?php
 $pageCss = 'data.css';
-include '../php_logic/koneksi.php';
+include '../php_logic/koneksi.php'; 
 include 'includes/header.php';
 ?>
 
@@ -38,7 +38,7 @@ include 'includes/header.php';
                     <a href="form_edit.php?id=<?php echo $row['id']; ?>" class="btn-edit">Edit</a>
                     
                     <a href="../php_logic/delete.php?id=<?php echo $row['id']; ?>" 
-                       class="btn-hapus" 
+                       class="btn-danger btn-hapus" 
                        onclick="return confirm('Yakin ingin menghapus data <?php echo $row['nama']; ?>?');">
                        Hapus
                     </a>
@@ -49,4 +49,4 @@ include 'includes/header.php';
     </table>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+</div> <?php include 'includes/footer.php'; ?>

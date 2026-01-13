@@ -11,7 +11,7 @@
 
 /* BODY */
 body {
-    background: linear-gradient(135deg, #74ebd5, #9face6);
+    background: linear-gradient(135deg, #dadbe0, #4f6beb);
     min-height: 100vh;
 }
 
@@ -19,7 +19,7 @@ body {
 h3 {
     text-align: center;
     margin-top: 30px;
-    color: #890ddb;
+    color: #6e6ceb;
     font-size: 28px;
     letter-spacing: 1px;
 }
@@ -70,10 +70,10 @@ textarea:focus {
 button {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(135deg, #6c63ff, #48c6ef);
+    background: linear-gradient(135deg, #6c63ff, #e9eced);
     border: none;
     border-radius: 12px;
-    color: #ca0dbd;
+    color: #f9f4f9;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
